@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Me{% endblock title %}
+
+{% block body %}
+
+<div class="container py-5">
+    <div class="contact-box">
+
+        <h1>Contact <span>Me</span></h1>
+        <div class="title-line"></div>
+
+        <p class="intro-text">
+            I am open to connecting with people, learning from new experiences,
+            and exploring opportunities in software development.
+        </p>
+
+        <div class="contact-item">
+            <h4>Email</h4>
+            <p>
+                <a href="mailto:umesalma25@gmail.com">
+                    umesalma25@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <h4>LinkedIn</h4>
+            <p>
+                <a href="https://www.linkedin.com/in/ume-salma-9a3203429/"
+                   target="_blank" rel="noopener noreferrer">
+                    View My LinkedIn Profile ↗
+                </a>
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <h4>GitHub</h4>
+            <p>
+                <a href="https://github.com/codeWith-Ume"
+                   target="_blank" rel="noopener noreferrer">
+                    Visit My GitHub Profile ↗
+                </a>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<style>
+.contact-box {
+    background-color: #FFFFFF;
+    padding: 35px;
+    border: 1px solid #E5EAF0;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(36, 52, 71, 0.08);
+}
+
+.contact-box h1 {
+    color: #243447;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-box h1 span {
+    color: #0EA5E9;
+}
+
+.title-line {
+    width: 70px;
+    height: 4px;
+    background-color: #0EA5E9;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.intro-text {
+    color: #465568;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    background-color: #F4F8FC;
+    padding: 18px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #0EA5E9;
+    transition: background-color 0.3s ease;
+}
+
+.contact-item:hover {
+    background-color: #E0F2FE;
+}
+
+.contact-item h4 {
+    color: #243447;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contact-item p {
+    margin-bottom: 0;
+}
+
+.contact-item a {
+    color: #0284C7;
+    text-decoration: none;
+    font-weight: 500;
+    overflow-wrap: anywhere;
+}
+
+.contact-item a:hover {
+    color: #0369A1;
+    text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+    .contact-box {
+        padding: 22px;
+    }
+
+    .contact-box h1 {
+        font-size: 2rem;
+    }
+}
+</style>
+
+{% endblock body %}

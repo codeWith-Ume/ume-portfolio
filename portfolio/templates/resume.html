@@ -1,0 +1,206 @@
+{% extends "base.html" %}
+
+{% block title %}Resume{% endblock title %}
+
+{% block body %}
+
+<div class="container py-5">
+
+    <div class="resume-box">
+
+        <h1>ABOUT ME</h1>
+
+        <p>
+            I am a motivated learner with experience in student leadership,
+            peer mentoring, and campus coordination. I am developing my
+            programming skills and interested in using technology to solve
+            real-world problems. I enjoy collaborating with others, taking
+            responsibility, and contributing to positive community impact.
+        </p>
+
+        <hr>
+
+        <h2>EDUCATION</h2>
+
+        <p>
+            <strong>Software Programming Diploma</strong> | NavGurukul, Raigarh
+            (2025 – Present)
+        </p>
+
+        <p>
+            <strong>B.Sc. Graduate</strong> | Govt. Sant Gahira Guru
+            Rameshwar College, Lailunga, Raigarh (2023 – 2025)
+        </p>
+
+        <hr>
+
+        <h2>SKILLS</h2>
+
+        <h4>Soft Skills</h4>
+        <ul>
+            <li>Communication and interpersonal skills</li>
+            <li>Mentoring and adaptability</li>
+            <li>Teamwork</li>
+            <li>Time management</li>
+        </ul>
+
+        <h4>Technical Skills</h4>
+        <ul>
+            <li>Python</li>
+            <li>Django</li>
+            <li>FastAPI-Basic Knowledge</li>
+            <li>HTML and CSS</li>
+            <li>Google Sheets and Excel</li>
+            
+        </ul>
+
+        <hr>
+
+        <h2>EXPERIENCE (AS A STUDENT)</h2>
+
+        <h5>Programming Coordinator (8 March 2026 – July 2026)</h5>
+        <ul>
+            <li>Mentored 50 peers in programming concepts and problem-solving.</li>
+            <li>Encouraged collaboration and supported a positive learning environment.</li>
+        </ul>
+
+        <h5>Facility Coordinator (26 September 2025 – 8 March 2026)</h5>
+        <ul>
+            <li>Managed campus operations and daily activities.</li>
+            <li>Coordinated between 141 students and 7 internal teams.</li>
+            <li>Demonstrated leadership and accountability.</li>
+        </ul>
+
+        <hr>
+
+        <h2>CERTIFICATES</h2>
+
+        <ul>
+            <li>
+                National Service Scheme (NSS) –
+                <a href="https://drive.google.com/file/d/1abRAROENNBoGYyemcmflyD_nLYDavHzY/view?usp=sharing"
+                   target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </li>
+
+            <li>
+                Scout/Guide – Governor Award –
+                <a href="https://drive.google.com/file/d/1kXdiX30by7febfBwAutmhlPqeHhIfe69/view?usp=sharing"
+                   target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </li>
+        </ul>
+
+        <hr>
+
+        <h2>ACHIEVEMENTS</h2>
+
+        <ul>
+            <li>Selected for the Software Engineering Program at NavGurukul.</li>
+            <li>Built basic Python projects and strengthened problem-solving skills.</li>
+            <li>Got an opportunity to attend the IndiaFOSS conference.</li>
+        </ul>
+
+        <hr>
+
+        <h2>LANGUAGES</h2>
+
+        <ul>
+            <li>English</li>
+            <li>Hindi</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<style>
+    .resume-box {
+        background-color: #FFFFFF;
+        padding: 35px;
+        border: 1px solid #E5EAF0;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px rgba(36, 52, 71, 0.08);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .resume-box:hover {
+        box-shadow: 0 12px 30px rgba(36, 52, 71, 0.12);
+    }
+
+    .resume-box h1 {
+        color: #0EA5E9;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .resume-box h2 {
+        color: #0EA5E9;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        padding-left: 12px;
+        border-left: 4px solid #0EA5E9;
+    }
+
+    .resume-box h4 {
+        color: #243447;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-top: 18px;
+    }
+
+    .resume-box h5 {
+        color: #243447;
+        font-weight: 600;
+        margin-top: 18px;
+    }
+
+    .resume-box p,
+    .resume-box li {
+        color: #465568;
+        line-height: 1.8;
+    }
+
+    .resume-box ul {
+        padding-left: 25px;
+    }
+
+    .resume-box li {
+        padding: 3px 0;
+    }
+
+    .resume-box hr {
+        border: 0;
+        height: 1px;
+        background-color: #DCEAF3;
+        margin: 25px 0;
+    }
+
+    .resume-box a {
+        color: #0284C7;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .resume-box a:hover {
+        color: #0369A1;
+        text-decoration: underline;
+    }
+
+    @media (max-width: 576px) {
+        .resume-box {
+            padding: 22px;
+        }
+
+        .resume-box h1 {
+            font-size: 1.7rem;
+        }
+
+        .resume-box h2 {
+            font-size: 1.25rem;
+        }
+    }
+</style>
+
+{% endblock body %}

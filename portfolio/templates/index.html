@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<div class="container py-5">
+    <div class="row align-items-center min-vh-100">
+
+        <div class="col-md-6">
+            <h1 class="display-3 fw-bold">
+                <span style="color: #0EA5E9;">Hi, I'm</span><br>
+                <span style="color: #0EA5E9;">Ume Salma</span>
+            </h1>
+
+            <h3 class="mt-3" style="color: #243447;">
+                (NavGurukul Student)
+            </h3>
+
+            <p class="lead mt-3">
+                I'm a student of NavGurukul who enjoys
+                learning new things, exploring technology, and solving
+                real-world problems through programming.
+            </p>
+
+            <a href="{% url 'project' %}"
+               class="btn btn-lg rounded-pill mt-3 text-white"
+               style="background-color: #0EA5E9; border: none;">
+                View My Projects
+            </a>
+
+            <a href="{% url 'about' %}"
+               class="btn btn-outline-dark btn-lg rounded-pill mt-3">
+                About Me
+            </a>
+        </div>
+
+        <div class="col-md-6 mt-5 mt-md-0 text-center">
+            <img
+                src="{% static 'images/Friendly Developer at a Modern Workspace.png' %}"
+                alt="Female software developer coding"
+                class="img-fluid developer-image">
+        </div>
+
+    </div>
+</div>
+
+<style>
+    .developer-image {
+        display: block;
+        width: 100%;
+        max-height: 500px;
+        object-fit: contain;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-12px);
+        }
+    }
+
+    @media (max-width: 767px) {
+        .developer-image {
+            max-height: 350px;
+        }
+
+        h1.display-3 {
+            font-size: 2.8rem;
+        }
+    }
+</style>
+
+{% endblock body %}

@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block title %}My Skills{% endblock title %}
+
+{% block body %}
+
+<div class="container py-5">
+
+    <div class="skills-box">
+
+        <h1>My <span>Skills</span></h1>
+
+        <div class="title-line"></div>
+
+        <p>Here are the skills I have developed through learning and campus responsibilities.</p>
+
+        <h2>Technical Skills</h2>
+
+        <ul>
+            <li>Python</li>
+            <li>Django</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>FastAPI — Basic knowledge</li>
+            <li>Hugging Face — Basic exposure</li>
+            <li>Google Sheets/Microsoft Excel</li>
+
+        </ul>
+
+        <h2>Soft Skills</h2>
+
+        <ul>
+            <li>Communication and Interpersonal Skills</li>
+            <li>Peer Mentoring</li>
+            <li>Teamwork and Collaboration</li>
+            <li>Adaptability</li>
+            <li>Time Management</li>
+            <li>Leadership and Coordination</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<style>
+    .skills-box {
+        background-color: #FFFFFF;
+        padding: 35px;
+        border-radius: 16px;
+        border: 1px solid #E5EAF0;
+        box-shadow: 0 8px 25px rgba(36, 52, 71, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skills-box:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(36, 52, 71, 0.12);
+    }
+
+    .skills-box h1 {
+        color: #243447;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .skills-box h1 span {
+        color: #0EA5E9;
+    }
+
+    .title-line {
+        width: 70px;
+        height: 4px;
+        background-color: #0EA5E9;
+        border-radius: 5px;
+        margin-bottom: 25px;
+    }
+
+    .skills-box p {
+        color: #465568;
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+
+    .skills-box h2 {
+        color: #0EA5E9;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 28px;
+        margin-bottom: 15px;
+        padding-left: 12px;
+        border-left: 4px solid #0EA5E9;
+    }
+
+    .skills-box ul {
+        padding-left: 20px;
+    }
+
+    .skills-box li {
+        color: #465568;
+        padding: 8px 12px;
+        margin-bottom: 8px;
+        background-color: #F4F8FC;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+
+    .skills-box li:hover {
+        background-color: #E0F2FE;
+    }
+
+    @media (max-width: 576px) {
+        .skills-box {
+            padding: 22px;
+        }
+
+        .skills-box h1 {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+{% endblock body %}

@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block title %}About Me{% endblock title %}
+
+{% block body %}
+
+<div class="container py-5">
+
+    <div class="about-box">
+
+        <h1>About <span>Me</span></h1>
+
+        <div class="title-line"></div>
+
+        <p>
+            Hello, my name is Ume Salma, and I am from Raigarh,
+            Chhattisgarh.
+        </p>
+
+        <h2>Educational Background</h2>
+
+        <p>
+            I completed my schooling at Amardeep Higher Secondary School,
+            Lailunga, Raigarh, Chhattisgarh.
+        </p>
+
+        <p>
+            I completed my graduation at Government Sant Gahira Guru
+            Rameshwar College, Lailunga, Raigarh, Chhattisgarh.
+        </p>
+
+        <p>
+            Currently, I am pursuing a Software Engineering Diploma
+            at NavGurukul.
+        </p>
+
+        <h2>My Interests</h2>
+
+        <p>
+            I enjoy learning new things, exploring technology, and
+            listening to people's stories. I am interested in Python
+            programming, backend development, and solving real-world
+            problems using technology.
+        </p>
+
+        <h2>My Goal</h2>
+
+        <p>
+            My goal is to solve real-world problems through technology,
+            make a positive impact, and continue learning and growing
+            in the field of technology.
+        </p>
+
+    </div>
+
+</div>
+
+<style>
+    .about-box {
+        background-color: #FFFFFF;
+        padding: 35px;
+        border-radius: 16px;
+        border: 1px solid #E5EAF0;
+        box-shadow: 0 8px 25px rgba(36, 52, 71, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-box:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(36, 52, 71, 0.12);
+    }
+
+    .about-box h1 {
+        color: #243447;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .about-box h1 span {
+        color: #0EA5E9;
+    }
+
+    .title-line {
+        width: 70px;
+        height: 4px;
+        background-color: #0EA5E9;
+        border-radius: 5px;
+        margin-bottom: 25px;
+    }
+
+    .about-box h2 {
+        color: #0EA5E9;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 28px;
+        margin-bottom: 14px;
+        padding-left: 12px;
+        border-left: 4px solid #0EA5E9;
+    }
+
+    .about-box p {
+        color: #465568;
+        line-height: 1.9;
+        font-size: 1.05rem;
+        margin-bottom: 14px;
+    }
+
+    @media (max-width: 576px) {
+        .about-box {
+            padding: 22px;
+        }
+
+        .about-box h1 {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+{% endblock body %}

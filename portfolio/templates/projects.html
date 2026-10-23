@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block title %}My Projects{% endblock title %}
+
+{% block body %}
+
+<div class="container py-5">
+
+    <div class="projects-box">
+
+        <h1>MY PROJECTS</h1>
+
+        <p>
+            I have made some Django projects, created APIs using FastAPI,
+            and built VibeCheck AI using Hugging Face.
+        </p>
+
+        <hr>
+
+        <h2>DJANGO PROJECTS</h2>
+
+        <h4>Learning Log</h4>
+        <p>
+            This was my first Django project. Users can register, log in,
+            create topics, add entries, and edit or delete their entries.
+        </p>
+        <p>
+            <a href="https://github.com/codeWith-Ume/Learning-log"
+               target="_blank" rel="noopener noreferrer">
+                View Learning Log on GitHub
+            </a>
+        </p>
+
+        <h4>Zuzu's Shop</h4>
+        <p>
+            This is a shopping website I made using Django. Users can
+            explore products and navigate through the website.
+            Purchases are not real.
+        </p>
+        <p>
+            <a href="https://github.com/codeWith-Ume/zuzus-shop"
+               target="_blank" rel="noopener noreferrer">
+                View Zuzu's Shop on GitHub
+            </a>
+        </p>
+
+        <hr>
+
+        <h2>AI PROJECT</h2>
+
+        <h4>VibeCheck AI</h4>
+        <p>
+            I made this project using Hugging Face. It checks whether
+            the sentiment of a user's text is positive or negative.
+        </p>
+        <p>
+            <a href="https://github.com/codeWith-Ume/VibeCheckAI"
+               target="_blank" rel="noopener noreferrer">
+                View VibeCheck AI on GitHub
+            </a>
+        </p>
+
+        <hr>
+
+        <h2>FASTAPI PROJECTS</h2>
+
+        <h4>Job Tracker API</h4>
+        <p>
+            <a href="https://github.com/codeWith-Ume/jobtrackerapi"
+               target="_blank" rel="noopener noreferrer">
+                View Job Tracker API on GitHub
+            </a>
+        </p>
+
+        <h4>Book Tracker API</h4>
+        <p>
+            <a href="https://github.com/codeWith-Ume/booktrackerapi"
+               target="_blank" rel="noopener noreferrer">
+                View Book Tracker API on GitHub
+            </a>
+        </p>
+
+        <h4>Mini Diary App</h4>
+        <p>
+            <a href="https://github.com/codeWith-Ume/Mini-diary-app"
+               target="_blank" rel="noopener noreferrer">
+                View Mini Diary App on GitHub
+            </a>
+        </p>
+
+        <h4>Task Management API</h4>
+        <p>
+            <a href="https://github.com/codeWith-Ume/Task-Management-API"
+               target="_blank" rel="noopener noreferrer">
+                View Task Management API on GitHub
+            </a>
+        </p>
+
+    </div>
+
+</div>
+
+<style>
+    .projects-box {
+        background-color: #FFFFFF;
+        padding: 35px;
+        border: 1px solid #E5EAF0;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px rgba(36, 52, 71, 0.08);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .projects-box:hover {
+        box-shadow: 0 12px 30px rgba(36, 52, 71, 0.12);
+    }
+
+    .projects-box h1 {
+        color: #0EA5E9;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .projects-box h2 {
+        color: #0EA5E9;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        padding-left: 12px;
+        border-left: 4px solid #0EA5E9;
+    }
+
+    .projects-box h4 {
+        color: #243447;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-top: 18px;
+    }
+
+    .projects-box p {
+        color: #465568;
+        line-height: 1.8;
+    }
+
+    .projects-box hr {
+        border: 0;
+        height: 1px;
+        background-color: #DCEAF3;
+        margin: 25px 0;
+    }
+
+    .projects-box a {
+        color: #0284C7;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .projects-box a:hover {
+        color: #0369A1;
+        text-decoration: underline;
+    }
+
+    @media (max-width: 576px) {
+        .projects-box {
+            padding: 22px;
+        }
+
+        .projects-box h1 {
+            font-size: 1.7rem;
+        }
+
+        .projects-box h2 {
+            font-size: 1.25rem;
+        }
+    }
+</style>
+
+{% endblock body %}
